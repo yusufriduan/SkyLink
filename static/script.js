@@ -2,27 +2,6 @@ let MSG = document.querySelector(".wait-msg");
 let PASS_INPUT_BOX = document.querySelector("#login-pass");
 let SHOW_PASSWORD_IMAGE = document.querySelector("#pass-img");
 
-const carousel = document.querySelector(".carousel-images");
-const images = document.querySelectorAll(".carousel-images img");
-const prevButton = document.querySelector(".prev");
-const nextButton = document.querySelector(".next");
-let currentIndex = 0;
-const form = document.querySelector("form");
-const tripOptions = document.querySelectorAll('input[name="trip"]');
-const passengerSelect = document.querySelector("select");
-const returnElement = document.querySelector(".return");
-const stopsElement = document.querySelector(".add-stops-button");
-const departureElement = document.querySelector(".departure");
-const addStopsButton = document.getElementById("addFlight");
-const stopFieldsContainer = document.getElementById("container");
-const departureInput = document.querySelector(".departureDate");
-const returnInput = document.querySelector(".returnDate");
-const today = new Date();
-const year = today.getFullYear();
-const month = String(today.getMonth() + 1).padStart(2, "0");
-const day = String(today.getDate()).padStart(2, "0");
-const formattedToday = `${year}-${month}-${day}`;
-
 // Toggle dropdown visibility when the profile button is clicked
 document.querySelector(".profile").addEventListener("click", function (event) {
   event.stopPropagation(); // Prevent click from propagating to the document
@@ -40,9 +19,26 @@ document.addEventListener("click", function () {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-  // For Carousel Picture
-
-  // For hide and show the return date for round-trip and add stops for multi-city
+  const carousel = document.querySelector(".carousel-images");
+  const images = document.querySelectorAll(".carousel-images img");
+  const prevButton = document.querySelector(".prev");
+  const nextButton = document.querySelector(".next");
+  let currentIndex = 0;
+  const form = document.querySelector("form");
+  const tripOptions = document.querySelectorAll('input[name="trip"]');
+  const passengerSelect = document.querySelector("select");
+  const returnElement = document.querySelector(".return");
+  const stopsElement = document.querySelector(".add-stops-button");
+  const departureElement = document.querySelector(".departure");
+  const addStopsButton = document.getElementById("addFlight");
+  const stopFieldsContainer = document.getElementById("container");
+  const departureInput = document.querySelector(".departureDate");
+  const returnInput = document.querySelector(".returnDate");
+  const today = new Date();
+  const year = today.getFullYear();
+  const month = String(today.getMonth() + 1).padStart(2, "0");
+  const day = String(today.getDate()).padStart(2, "0");
+  const formattedToday = `${year}-${month}-${day}`;
 
   // Update the carousel position
   function updateCarousel() {

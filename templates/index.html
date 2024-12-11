@@ -56,15 +56,16 @@
             </div>
         </div>
     </header>
-    <div class="carousel">
-        <button class="prev">❮</button>
-        <div class="carousel-images">
-            <img src="{{url_for('static',filename='promo1.jpg')}}" alt="Image 1">
-            <img src="{{url_for('static',filename='promo2.jpg')}}" alt="Image 2">
-        </div>
-        <button class="next">❯</button>
-    </div>
+
     <main id="home-page-main">
+        <div class="carousel">
+            <button class="prev">❮</button>
+            <div class="carousel-images">
+                <img src="{{url_for('static',filename='img/promo1.png')}}" alt="Image 1">
+                <img src="{{url_for('static',filename='img/promo2.png')}}" alt="Image 2">
+            </div>
+            <button class="next">❯</button>
+        </div>
         <div class="booking-form">
             <form>
                 <div id="container">
@@ -125,7 +126,7 @@
                             
                             <div class="departure">
                                 <p>Departure date</p>
-                                <input type="date" required>
+                                <input type="date" class="stopsDate" required>
                             </div>
                         </div>
                     </div>
