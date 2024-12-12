@@ -192,7 +192,7 @@ body{
     justify-content: space-between;
     background-color: white;
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 1em;
     box-sizing: border-box;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     height: fit-content;
@@ -215,10 +215,6 @@ body{
     font-size: small;
 }
 
-.return {
-    display: block;
-    margin: 0 0 5px 0;
-}
 
 .return p{
     margin: 0 0 5px 0;
@@ -677,8 +673,6 @@ footer{
 
     footer{
         position: absolute;
-        bottom: 0%;
         height: fit-content;
-
     }
 }
